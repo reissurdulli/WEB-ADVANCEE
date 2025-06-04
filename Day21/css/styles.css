@@ -1,0 +1,54 @@
+/* Apply styles for screens 600px and wider */
+@media (min-width: 600px) {
+    body {
+        background: #00004e;
+        color: white;
+    }
+}
+
+/* Apply styles for screens narrower than 600px */
+@media (max-width: 600px) {
+    body {
+        background: #00004e;
+        color: white;
+    }
+}
+
+/* Global h1 styles */
+h1 {
+    border: 2px solid white;
+    padding: 20px;
+}
+
+/* Orientation-based styles */
+@media all and (orientation: landscape) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media all and (orientation: portrait) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+/* Hide image for mid-sized screens */
+@media (min-width: 600px) and (max-width: 900px) {
+    img {
+        display: none;
+    }
+}
+
+/* Make paragraph text into columns on wider screens */
+@media (min-width: 600px) {
+    p {
+        column-count: 2;
+    }
+}
+
+@media print {
+    body {
+        background-color: transparent;
+    }
+}
